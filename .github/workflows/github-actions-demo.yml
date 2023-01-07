@@ -21,5 +21,4 @@ jobs:
           ls ${{ github.workspace }}
           python -m pip install --upgrade databricks-cli
           databricks repos update --repo-id 2648803504275152 --branch "main"
-          curl -n -o -X PATCH https://adb-4407664330175371.3.databricks.azure.cn/api/2.0/repos/2648803504275152 -H 'Authorization: Bearer dapi4d0e54af10d450caa494eebc0bcbb394' -d '{"branch": "main"}'
       - run: echo "🍏 This job's status is ${{ job.status }}."
