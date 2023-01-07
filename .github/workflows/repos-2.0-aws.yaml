@@ -7,12 +7,12 @@ info:
     [repos](https://docs.databricks.com/repos.html). Users can use the API to
     access all repos that they have manage permissions on.
 servers:
-  - url: https://<databricks-instance>/api/2.0
+  - url: https://adb-4407664330175371.3.databricks.azure.cn/api/2.0
     description: >-
       In the URL, substitute `<databricks-instance>` with the domain name of
       your deployment. Use the form `<account>.cloud.databricks.com`.
 paths:
-  /repos:
+  /repos/mlops_poc/test_css/:
     description: This endpoint manages repos for a workspace.
     get:
       summary: Get repos
