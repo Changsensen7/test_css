@@ -16,4 +16,5 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          python -m pip install --upgrade databricks-cli
       - run: echo "🍏 This job's status is ${{ job.status }}."
