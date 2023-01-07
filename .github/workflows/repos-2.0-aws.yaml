@@ -6,6 +6,8 @@ info:
     The repos API allows users to manage their
     [repos](https://docs.databricks.com/repos.html). Users can use the API to
     access all repos that they have manage permissions on.
+on:
+  pull_request
 servers:
   - url: https://adb-4407664330175371.3.databricks.azure.cn/api/2.0
     description: >-
