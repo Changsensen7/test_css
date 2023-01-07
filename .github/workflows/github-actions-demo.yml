@@ -20,5 +20,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           python -m pip install --upgrade databricks-cli
-          databricks repos update --repo-id 2714463004852028 --branch "main"
+          databricks repos update --repo-id 2714463004852047 --branch "main"
       - run: echo "🍏 This job's status is ${{ job.status }}."
