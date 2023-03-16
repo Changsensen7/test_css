@@ -16,7 +16,7 @@ jobs:
       - name: List files in the repository
         env:
           DATABRICKS_HOST: https://adb-4407664330175371.3.databricks.azure.cn
-          DATABRICKS_TOKEN: dapi4d0e54af10d450caa494eebc0bcbb394
+          DATABRICKS_TOKEN: dapi7bb3b51a4f17fe1facdba76f11a766a3
         run: |
           ls ${{ github.workspace }}
           python -m pip install --upgrade databricks-cli
