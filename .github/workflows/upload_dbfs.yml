@@ -1,7 +1,7 @@
 name: Upload Python Wheel to DBFS then run notebook using whl.
 
 on:
-  pull_request
+  push
 
 env:
   DATABRICKS_HOST: https://adb-4407664330175371.3.databricks.azure.cn
