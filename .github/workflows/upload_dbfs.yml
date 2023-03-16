@@ -4,7 +4,7 @@ on:
   pull_request
 
 env:
-  DATABRICKS_HOST: https://adb-XXXX.XX.azuredatabricks.net
+  DATABRICKS_HOST: https://adb-4407664330175371.3.databricks.azure.cn
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -51,18 +51,5 @@ jobs:
           # The cluster JSON below is for Azure Databricks. On AWS and GCP, set
           # node_type_id to an appropriate node type, e.g. "i3.xlarge" for
           # AWS or "n1-highmem-4" for GCP
-          new-cluster-json: >
-            {
-              "num_workers": 1,
-              "spark_version": "10.4.x-scala2.12",
-              "node_type_id": "Standard_D3_v2"
-            }
-          # Grant all users view permission on the notebook results, so that they can
-          # see the result of our CI notebook
-          access-control-list-json: >
-            [
-              {
-                "group_name": "users",
-                "permission_level": "CAN_VIEW"
-              }
-            ]
+         
+   
