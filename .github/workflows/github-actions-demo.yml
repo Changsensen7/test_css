@@ -15,10 +15,10 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         env:
-          DATABRICKS_HOST: https://adb-4407664330175371.3.databricks.azure.cn
-          DATABRICKS_TOKEN: dapi7bb3b51a4f17fe1facdba76f11a766a3
+          DATABRICKS_HOST: https://adb-7433700282707568.0.databricks.azure.cn
+          DATABRICKS_TOKEN: dapi52f341bee9a63d6d4f28a4d3bf115f54
         run: |
           ls ${{ github.workspace }}
           python -m pip install --upgrade databricks-cli
-          databricks repos update --repo-id 2714463004852047 --branch "main"
+          databricks repos update --repo-id 2697261239132191 --branch "main"
       - run: echo "🍏 This job's status is ${{ job.status }}."
